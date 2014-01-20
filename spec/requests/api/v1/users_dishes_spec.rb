@@ -22,15 +22,15 @@ describe "Users Dishes" do
 		end
 
 		it "returns the dishes the user has tried" do
-			expect(json(response.body)[:dishes]).to include(json(fried_rice.to_json), json(chipotle_wrap.to_json))
+			expect(json(response.body)[:users]).to include({ id: fried_rice.id, name: fried_rice.name, description: fried_rice.description, restaurant: thai.name }, { id: chipotle_wrap.id, name: chipotle_wrap.name, description: chipotle_wrap.description, restaurant: healthy.name })
 		end
 
 		it "returns the correct number of dishes" do
-			expect(json(response.body)[:dishes].length).to eq(2)
+			expect(json(response.body)[:users].length).to eq(2)
 		end
 
 		it "does not return any dishes the user has not tried" do
-			expect(json(response.body)[:dishes]).not_to include(json(portobello_wrap.to_json))
+			expect(json(response.body)[:users]).not_to include({ id: portobello_wrap.id, name: portobello_wrap.name, description: portobello_wrap.description, restaurant: healthy.name })
 		end
 	end
 

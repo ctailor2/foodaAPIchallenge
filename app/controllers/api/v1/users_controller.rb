@@ -12,7 +12,7 @@ class Api::V1::UsersController < Api::V1::ApplicationController
 
 	def restaurants
 		if logged_in?
-			render json: { restaurants: current_user.restaurants.uniq }
+			render json: current_user.restaurants.uniq
 		else
 			head :unauthorized
 		end

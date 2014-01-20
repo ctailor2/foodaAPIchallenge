@@ -2,5 +2,7 @@
 
 FactoryGirl.define do
   factory :purchase do
+  	association :dish
+  	association :user
   end
 end

@@ -20,7 +20,7 @@ class Api::V1::UsersController < Api::V1::ApplicationController
 
 	def dishes
 		if logged_in?
-			render json: { dishes: current_user.dishes.uniq }
+			render json: current_user.dishes.uniq
 		else
 			head :unauthorized
 		end

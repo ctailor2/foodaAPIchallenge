@@ -17,4 +17,14 @@ class Api::V1::UsersController < Api::V1::ApplicationController
 			head :unauthorized
 		end
 	end
+
+	def dishes
+		id = session[:user_id]
+		if id
+			user = User.find(id)
+			render json: { dishes: user.dishes.uniq }
+		else
+			head :unauthorized
+		end
+	end
 end

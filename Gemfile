@@ -23,6 +23,9 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+# Use serializers for returning json
+gem 'active_model_serializers', '~> 0.8.0'
+
 group :development, :test do
 	gem 'rspec-rails', '~> 2.14.0'
 	gem 'factory_girl_rails', '~> 4.2.1'

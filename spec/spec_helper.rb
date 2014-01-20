@@ -42,6 +42,7 @@ RSpec.configure do |config|
 
   # Use shortened FactoryGirl syntax
   config.include FactoryGirl::Syntax::Methods
+  config.include Requests::JsonHelpers, type: :request
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction

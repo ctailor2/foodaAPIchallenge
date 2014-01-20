@@ -23,15 +23,15 @@ describe "Users Restaurants" do
 		end
 
 		it "returns the restaurants the user has tried" do
-			expect(json(response.body)[:restaurants]).to include(json(thai.to_json), json(mexican.to_json))
+			expect(json(response.body)[:users]).to include({ id: thai.id, name: thai.name }, { id: mexican.id, name: mexican.name })
 		end
 
 		it "returns the correct number of restaurants" do
-			expect(json(response.body)[:restaurants].length).to eq(2)
+			expect(json(response.body)[:users].length).to eq(2)
 		end
 
 		it "does not return any restaurants the user has not tried" do
-			expect(json(response.body)[:restaurants]).not_to include(json(healthy.to_json))
+			expect(json(response.body)[:users]).not_to include({ id: healthy.id, name: healthy.name })
 		end
 	end
 

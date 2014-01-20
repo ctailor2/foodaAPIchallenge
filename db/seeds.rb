@@ -4,7 +4,7 @@ developer.applications.create(name: 'My Awesome Fooda App', key: 'secret')
 thai = Restaurant.create(name: 'Amarit Thai Grill')
 thai.dishes.create(name: 'Fried Rice', description: 'Thai fried rice with egg, onion, and your choice of chicken or beef')
 thai.dishes.create(name: 'Kungpao Chicken', description: 'Stir-fried chicken with onion, bell pepper, water chestnut, chili, & peanut')
-that.dishes.create(name: 'Amarit Pepper Steak', description: 'Stir-fried tender beef, bell pepper, onion, mushrooms, peapod, tomato and water chestnut in a tasty thick thai sauce')
+thai.dishes.create(name: 'Amarit Pepper Steak', description: 'Stir-fried tender beef, bell pepper, onion, mushrooms, peapod, tomato and water chestnut in a tasty thick thai sauce')
 
 mexican = Restaurant.create(name: 'Barrio Urban Taqueria')
 mexican.dishes.create(name: 'Chicken Enchiladas', description: 'Three small enchiladas topped with mild ranchera sauce and queso')

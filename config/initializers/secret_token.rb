@@ -16,4 +16,4 @@
 # Using secret_token for rails3 compatibility. Change to secret_key_base
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
-FoodaAPIchallenge::Application.config.secret_token = '320660d2c58af96e162f20dac480f2d471895383cc97008de95e4cbe254f02518de3217777706eb637438dca41670d6c80cbc03605bfa99093f8d0ca14cb2af9'
+FoodaAPIchallenge::Application.config.secret_key_base = '320660d2c58af96e162f20dac480f2d471895383cc97008de95e4cbe254f02518de3217777706eb637438dca41670d6c80cbc03605bfa99093f8d0ca14cb2af9'

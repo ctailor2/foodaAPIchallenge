@@ -11,7 +11,7 @@ describe "Ping API" do
 		end
 
 		it "responds with a welcome message" do
-			expect(json[:message]).to eq("Welcome to the Fooda API!")
+			expect(json(response.body)[:message]).to eq("Welcome to the Fooda API!")
 		end
 	end
 

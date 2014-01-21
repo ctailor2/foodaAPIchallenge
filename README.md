@@ -24,9 +24,10 @@ Each 3rd party application that is registered under a 'developer' account is gra
 Requested API resources are returned as JSON.
 
 **Data Content Type:** application/json
+
 **Base Url:** http://localhost:3000/api/v1
 
-## API Endpoints
+### API Endpoints
 **User Authentication**
 ````
 POST /users/auth

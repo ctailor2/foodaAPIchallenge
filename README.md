@@ -35,6 +35,16 @@ Requested API resources are returned as JSON.
 **Base Url:** http://localhost:3000/api/v1
 
 ### API Endpoints
+**Ping API**
+````
+GET /
+
+Simple endpoint to ensure your application and API key are registered in the Fooda database. When pinged, the server responds with a pleasant welcome message.
+
+Example usage:
+curl -H 'Authorization: Token token="secret"' localhost:3000/api/v1; echo
+````
+
 **User Authentication**
 ````
 POST /users/auth

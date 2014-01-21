@@ -18,6 +18,13 @@ rake db:test:clone
 rspec
 ````
 
+### Kick-start the Server
+````
+rails server
+````
+
+And you're all set to start making API requests...
+
 ### The API
 Each 3rd party application that is registered under a 'developer' account is granted a Fooda API key. This key must be passed in on the header of all HTTP requests to the API in order to access API resources.
 

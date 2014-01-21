@@ -52,7 +52,7 @@ GET /users/restaurants
 Returns a list of restaurants that the user has purchased from, accessible via the key "users".
 
 Example usage:
-curl -H 'Authorization: Token token="secret"' -b ~/Desktop/cookies.txt localhost:3000/api/v1/users/restaurants
+curl -H 'Authorization: Token token="secret"' -b ~/Desktop/cookies.txt localhost:3000/api/v1/users/restaurants; echo
 ````
 
 **User Dishes**
@@ -62,5 +62,5 @@ Get /users/dishes
 Returns a list of dishes that the user has purchased, accessible via the key "users".
 
 Example usage:
-curl -H 'Authorization: Token token="secret"' -b ~/Desktop/cookies.txt localhost:3000/api/v1/users/dishes
+curl -H 'Authorization: Token token="secret"' -b ~/Desktop/cookies.txt localhost:3000/api/v1/users/dishes; echo
 ````
